@@ -21,13 +21,28 @@ class index extends Component {
             <h5>Select Your Templete</h5>
             <div className="templates-container">
                 <div className="template_container">
-                   <Link to="/createResume/01"> <img onClick={this.handleSelect} id="1" src={templete1} alt="resume"></img></Link>
+                   <Link to="/createResume/01"> 
+                   <img onClick={this.handleSelect} id="1" src={templete1} alt="resume"></img>
+                   <div class="middle">
+                     <p class="text">Use this template </p>
+                   </div>
+                   </Link>
                 </div>
                 <div className="template_container">
-                   <Link to="/createResume/01"> <img onClick={this.handleSelect} src={templete2} id="2"  alt="resume"></img></Link>
+                   <Link to="/createResume/01">
+                        <img onClick={this.handleSelect} src={templete2} id="2"  alt="resume"></img>
+                        <div class="middle">
+                          <p class="text">Use this template </p>
+                        </div>
+                 </Link>
                 </div>
                 <div className="template_container">
-                    <Link to="/createResume/01"><img onClick={this.handleSelect} src={templete3} id="3"  alt="resume"></img></Link>
+                    <Link to="/createResume/01">
+                        <img onClick={this.handleSelect} src={templete3} id="3"  alt="resume"></img>
+                        <div class="middle">
+                           <p class="text">Use this template </p>
+                        </div>   
+                    </Link>
                 </div>
                 
                

@@ -6,7 +6,6 @@ $bg-color : "#1F6870";
 
 
 .navigation{
-    color: $bg-color; 
     .nav{
         border: 2px solid #000;
     }
@@ -15,6 +14,7 @@ $bg-color : "#1F6870";
         font-weight: bolder;
         font-size: 1.2em;
     }
+    margin: 0;
     
 }
 
@@ -35,41 +35,46 @@ $bg-color : "#1F6870";
 
 .header{
     height: 80vh;
-    background: #1F6870;
+    background: linear-gradient(45deg, #e73c7e, #0dbfd3, #23d5ab, #1F6870);
 
     .header_container{
-        margin: 0 1em;
+        display: flex;
+        justify-content: center;
+        align-items: center; 
+        flex-direction: column;  
     }
 
+
     .text{
+        background-color: #fff;
         display: flex;
         flex-direction: column;
         align-items: center;
         justify-content: center;
-        padding-top: 10em;
-        color: #fff;
+        padding: 1.5em;
+        margin-top: 10%;
+        color: #1F6870;
 
         h4{
             font-size: 3em;
-            padding-bottom: 0.6em;
+            padding-bottom: 0.5em;
         }
         h6{
             font-size: 1em;
+           
         }
         button{
-            color: #61EFFF;
+            color: #fff;
             border: 1px solid #000;
             margin-top: 0.5em;
+            background-color: #1F6870;
 
             &:hover{
-                background-color: #61EFFF;
+                background-color: #FFF;
                 color: #000;
             }
         }
     }
 
-    img{
-        margin-top: 5em;
-    }
-
+    
 }

@@ -12,8 +12,7 @@ export class Resume extends Component {
     render() {
         return (
             <div>
-                Resume
-                <Template1  resume={this.props.resume}/>
+                <div className='prev-template'> <Template1  resume={this.props.resume}/></div>
                 <div  className="prev">
                 <button  onClick={this.goBack} className='btn'> <i className="far fa-arrow-alt-circle-left"></i>Back</button>
                 </div>

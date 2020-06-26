@@ -5,6 +5,7 @@
          font-size: 3em;
          text-align: center;
          padding: 0.5em 0;
+         color: #1F6870;
      }
 
     .templates-container{
@@ -15,14 +16,41 @@
         margin: 2em 3em;
 
         .template_container{
-            border: 1px solid grey;
+            border: 1px solid #000;
             border-radius: 3px;
             margin: 3em 1em;
             width: 40vw;
             padding: 0;
+            position: relative;
             img{
                 width: 100%;
             }
+
+            &:hover{
+                opacity: 0.3;
+            }
+            .middle {
+                transition: .5s ease;
+                opacity: 0;
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+                -ms-transform: translate(-50%, -50%);
+                text-align: center;
+            }
+
+            &:hover .middle {
+                opacity: 1;
+            }
+            .text {
+                background-color: #000;
+                color: white;
+                font-size: 16px;
+                padding: 16px 32px;
+                width: 100%;
+            }
+            
            
             
         }
@@ -30,7 +58,10 @@
     
 
 }
-
+.prev-template{
+    margin: 5% 10%;
+    border: 5px solid #000;
+}
 
 .template_container{
     background-color: #fff;
@@ -113,11 +144,11 @@
         .objective_section{
             margin: 1em 0.5em;
             border-bottom: solid 1px #444;
-            margin-bottom: 0.5em;
+            padding-bottom: 0.5em;
         }
         .education_section{
             border-bottom: solid 1px #444; 
-            margin-bottom: 0.5em;
+            padding-bottom: 1.5em;
 
             .education{
                 margin-bottom: 0.5em;
@@ -132,7 +163,7 @@
         }
         .experience_section{
             border-bottom: solid 1px #444;
-            margin-bottom: 0.5em;
+            padding-bottom: 1.5em;
 
             .experience{
 
@@ -148,11 +179,11 @@
         }
         .reference_section{
             border-bottom: solid 1px #444;
-            margin-bottom: 0.5em;
+            padding-bottom: 1.5em;
         }
-        .certification_sections{
+        // .certification_sections{
            
-        }
+        // }
     }
     
 }
@@ -176,21 +207,21 @@
         margin-bottom: 0.5em;
     }
 
-    .objective_section{
+//     .objective_section{
       
-    }
-    .education_section{
+//     }
+//     .education_section{
        
 
-    }
-    .experience_section{
+//     }
+//     .experience_section{
         
 
-    }
-    .certifications_sections{
+//     }
+//     .certifications_sections{
        
       
-   }
+//    }
 
     } 
 

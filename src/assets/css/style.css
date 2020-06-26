@@ -3,6 +3,7 @@
   font-size: 3em;
   text-align: center;
   padding: 0.5em 0;
+  color: #1F6870;
 }
 
 .templates_section .templates-container {
@@ -16,15 +17,50 @@
 }
 
 .templates_section .templates-container .template_container {
-  border: 1px solid grey;
+  border: 1px solid #000;
   border-radius: 3px;
   margin: 3em 1em;
   width: 40vw;
   padding: 0;
+  position: relative;
 }
 
 .templates_section .templates-container .template_container img {
   width: 100%;
+}
+
+.templates_section .templates-container .template_container:hover {
+  opacity: 0.3;
+}
+
+.templates_section .templates-container .template_container .middle {
+  -webkit-transition: .5s ease;
+  transition: .5s ease;
+  opacity: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.templates_section .templates-container .template_container:hover .middle {
+  opacity: 1;
+}
+
+.templates_section .templates-container .template_container .text {
+  background-color: #000;
+  color: white;
+  font-size: 16px;
+  padding: 16px 32px;
+  width: 100%;
+}
+
+.prev-template {
+  margin: 5% 10%;
+  border: 5px solid #000;
 }
 
 .template_container {
@@ -103,12 +139,12 @@
 .template_container .template1 .main .objective_section {
   margin: 1em 0.5em;
   border-bottom: solid 1px #444;
-  margin-bottom: 0.5em;
+  padding-bottom: 0.5em;
 }
 
 .template_container .template1 .main .education_section {
   border-bottom: solid 1px #444;
-  margin-bottom: 0.5em;
+  padding-bottom: 1.5em;
 }
 
 .template_container .template1 .main .education_section .education {
@@ -128,7 +164,7 @@
 
 .template_container .template1 .main .experience_section {
   border-bottom: solid 1px #444;
-  margin-bottom: 0.5em;
+  padding-bottom: 1.5em;
 }
 
 .template_container .template1 .main .experience_section .experience .section-subheading {
@@ -141,7 +177,7 @@
 
 .template_container .template1 .main .reference_section {
   border-bottom: solid 1px #444;
-  margin-bottom: 0.5em;
+  padding-bottom: 1.5em;
 }
 
 .template_container .template2 .section-heading {
@@ -317,7 +353,7 @@
 }
 
 .navigation {
-  color: "#1F6870";
+  margin: 0;
 }
 
 .navigation .nav {
@@ -358,14 +394,27 @@
 
 .header {
   height: 80vh;
-  background: #1F6870;
+  background: linear-gradient(45deg, #e73c7e, #0dbfd3, #23d5ab, #1F6870);
 }
 
 .header .header_container {
-  margin: 0 1em;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
 }
 
 .header .text {
+  background-color: #fff;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -379,13 +428,14 @@
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  padding-top: 10em;
-  color: #fff;
+  padding: 1.5em;
+  margin-top: 10%;
+  color: #1F6870;
 }
 
 .header .text h4 {
   font-size: 3em;
-  padding-bottom: 0.6em;
+  padding-bottom: 0.5em;
 }
 
 .header .text h6 {
@@ -393,17 +443,14 @@
 }
 
 .header .text button {
-  color: #61EFFF;
+  color: #fff;
   border: 1px solid #000;
   margin-top: 0.5em;
+  background-color: #1F6870;
 }
 
 .header .text button:hover {
-  background-color: #61EFFF;
+  background-color: #FFF;
   color: #000;
-}
-
-.header img {
-  margin-top: 5em;
 }
 /*# sourceMappingURL=style.css.map */

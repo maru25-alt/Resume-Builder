@@ -15,16 +15,21 @@ import {
 import Ids from 'ids'
 
 var ids = new Ids();
+export const createLocalStorage = () => dispatch => {
+    
+}
 
 export const setSelectedTemplate = (id) => dispatch =>{
-    console.log(id, "selected id")
+    localStorage.setItem("selectedTemplate", id);
       dispatch({
           type: SELECTED_TEMPELATE,
           payload: id
       })
+
 }
 
 export const fetchPersonal = (data) => dispatch => {
+    localStorage.setItem("personalInformation", data);
     dispatch({
         type: GET_PERSONAL_DATA,
         payload: data})
