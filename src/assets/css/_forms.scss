@@ -1,0 +1,65 @@
+.forms_container{
+    margin: 5em;
+}
+
+// .form_container{
+
+// }
+
+.preview_container{
+    border: 15px solid #444;
+} 
+    
+.form_control_buttons{
+   margin-top: 3em;
+    button{
+        background-color: #1F6870;
+        color: #fff;
+        width: 7em;
+
+        &:hover{
+            border: 1px solid #1F6870 ;
+            background-color: #fff;
+        }
+    }
+
+    .next{
+        float: right;
+    }
+
+}
+
+.cancel{
+    float: right;
+}
+
+.save{
+    background-color: #61EFFF;
+    margin-right: 0.5em;
+}
+
+.error{
+    color: #F08C43;
+}
+
+.form{
+    border: 1px solid  #61EFFF;
+    padding: 2em;
+    border-radius: 5px;
+    margin: 2em 0;
+}
+
+.education_container{
+    background: #61EFFF;
+    margin: 1em 0;
+    padding: 1em;
+    border-radius: 10px;
+}
+
+.section_heading{
+    background-color: #1F6870;
+    color: #fff;
+    text-align: center;
+    padding: 0.5em;
+    border-radius: 5px;
+}

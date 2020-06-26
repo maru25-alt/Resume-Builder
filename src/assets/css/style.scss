@@ -1,0 +1,75 @@
+@import './template';
+@import './colors';
+@import './forms';
+$bg-color : "#1F6870";
+
+
+
+.navigation{
+    color: $bg-color; 
+    .nav{
+        border: 2px solid #000;
+    }
+    .item{
+        color: #61EFFF;
+        font-weight: bolder;
+        font-size: 1.2em;
+    }
+    
+}
+
+.footer{
+    border-top: 1px solid #000;
+    display: flex;
+     flex-direction: column;
+   
+   img{
+       display: flex;
+       justify-content: center;
+      align-self: center;
+   }
+    p{
+        text-align: center;
+    }
+}
+
+.header{
+    height: 80vh;
+    background: #1F6870;
+
+    .header_container{
+        margin: 0 1em;
+    }
+
+    .text{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        padding-top: 10em;
+        color: #fff;
+
+        h4{
+            font-size: 3em;
+            padding-bottom: 0.6em;
+        }
+        h6{
+            font-size: 1em;
+        }
+        button{
+            color: #61EFFF;
+            border: 1px solid #000;
+            margin-top: 0.5em;
+
+            &:hover{
+                background-color: #61EFFF;
+                color: #000;
+            }
+        }
+    }
+
+    img{
+        margin-top: 5em;
+    }
+
+}

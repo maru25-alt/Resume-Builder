@@ -1,0 +1,409 @@
+.templates_section h5 {
+  margin-top: 2em;
+  font-size: 3em;
+  text-align: center;
+  padding: 0.5em 0;
+}
+
+.templates_section .templates-container {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: auto  auto;
+      grid-template-columns: auto  auto;
+  font-size: 1rem;
+  width: 70%;
+  margin: 2em 3em;
+}
+
+.templates_section .templates-container .template_container {
+  border: 1px solid grey;
+  border-radius: 3px;
+  margin: 3em 1em;
+  width: 40vw;
+  padding: 0;
+}
+
+.templates_section .templates-container .template_container img {
+  width: 100%;
+}
+
+.template_container {
+  background-color: #fff;
+  font-size: 0.6em;
+}
+
+.template_container .template1 .sidebar {
+  background-color: #161636;
+  color: #fff;
+  padding: 2em 0.5em;
+}
+
+.template_container .template1 .sidebar .section_heading {
+  font-size: 3em;
+  color: red;
+  border: 1px solid red;
+}
+
+.template_container .template1 .sidebar .name_section {
+  margin-bottom: 2em;
+}
+
+.template_container .template1 .sidebar .name_section h3 {
+  font-size: 0.5em;
+  font-weight: bolder;
+  padding: 0.3em;
+}
+
+.template_container .template1 .sidebar .name_section img {
+  width: 9em;
+}
+
+.template_container .template1 .sidebar .contact_section {
+  margin-bottom: 2em;
+}
+
+.template_container .template1 .sidebar .contact_section .section_heading {
+  font-size: 0.3em;
+  background-color: red;
+}
+
+.template_container .template1 .sidebar .contact_section .contact {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  font-size: 0.1em;
+}
+
+.template_container .template1 .sidebar .skills_section {
+  margin-bottom: 2em;
+}
+
+.template_container .template1 .sidebar .skills_section .skill label {
+  font-size: 0.5em;
+}
+
+.template_container .template1 .sidebar .achievements_sections {
+  margin-bottom: 2em;
+}
+
+.template_container .template1 .sidebar .achievements_sections .achievements {
+  list-style: none;
+}
+
+.template_container .template1 .sidebar .language_section {
+  margin-bottom: 2em;
+}
+
+.template_container .template1 .main .section-heading {
+  font-weight: bolder;
+  font-size: 1.2em;
+  text-transform: uppercase;
+}
+
+.template_container .template1 .main .objective_section {
+  margin: 1em 0.5em;
+  border-bottom: solid 1px #444;
+  margin-bottom: 0.5em;
+}
+
+.template_container .template1 .main .education_section {
+  border-bottom: solid 1px #444;
+  margin-bottom: 0.5em;
+}
+
+.template_container .template1 .main .education_section .education {
+  margin-bottom: 0.5em;
+}
+
+.template_container .template1 .main .education_section .education .title {
+  font-weight: bolder;
+}
+
+.template_container .template1 .main .education_section .education .content {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 2fr 1fr;
+      grid-template-columns: 2fr 1fr;
+}
+
+.template_container .template1 .main .experience_section {
+  border-bottom: solid 1px #444;
+  margin-bottom: 0.5em;
+}
+
+.template_container .template1 .main .experience_section .experience .section-subheading {
+  font-weight: bolder;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 2fr 1fr;
+      grid-template-columns: 2fr 1fr;
+}
+
+.template_container .template1 .main .reference_section {
+  border-bottom: solid 1px #444;
+  margin-bottom: 0.5em;
+}
+
+.template_container .template2 .section-heading {
+  font-weight: bolder;
+  font-size: 1.2em;
+  text-transform: uppercase;
+  color: maroon;
+}
+
+.template_container .template2 .main .personal_section {
+  background-color: maroon;
+  color: #fff;
+  width: 100%;
+  padding: 0.2em;
+  margin-bottom: 0.5em;
+}
+
+.template_container .template2 .sidebar {
+  background-color: #ca3c3c;
+  height: 100%;
+  margin: 0;
+}
+
+.template_container .template2 .sidebar .profile_section {
+  margin-top: 3em;
+}
+
+.template_container .template2 .sidebar .profile_section img {
+  width: 9em;
+}
+
+.template_container .template3 .heading_section {
+  color: #fff;
+}
+
+.template_container .template3 .heading_section .personal_info {
+  background-color: #094d4a;
+  padding: 0.5em;
+  width: 100%;
+}
+
+.template_container .template3 .heading_section .personal_info .profile {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.template_container .template3 .heading_section .personal_info .profile img {
+  border-radius: 50%;
+  width: 8em;
+}
+
+.template_container .template3 .heading_section .personal_info .profile h6 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-size: 0.3em;
+  margin-left: 0.5em;
+}
+
+.template_container .template3 .heading_section .social_section {
+  background-color: mediumturquoise;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr 1fr;
+      grid-template-columns: 1fr 1fr 1fr;
+  padding: 0.5em 0;
+}
+
+.template_container .template3 .main {
+  padding: 1em;
+}
+
+.template_container .template3 .main .section-heading {
+  background-color: mediumturquoise;
+  color: #fff;
+  border-radius: 10px;
+  text-align: center;
+  padding: 0.3em 0;
+  font-weight: bolder;
+  margin-bottom: 0.3em;
+}
+
+.template_container .template3 .main ul {
+  list-style: none;
+}
+
+.template_container .template3 .main .reference_section .reference .name {
+  font-weight: bolder;
+}
+
+.template_container .template3 .main .achievements_section ul {
+  list-style-type: circle;
+}
+
+.template_container .template3 .main .experience_section .experience .date {
+  color: #3e3e3e;
+  font-style: italic;
+}
+
+.template_container .template3 .main .experience_section .experience .company {
+  font-weight: bolder;
+  font-size: 1em;
+}
+
+.template_container .template3 .main .experience_section .experience .title {
+  font-weight: bold;
+}
+
+.forms_container {
+  margin: 5em;
+}
+
+.preview_container {
+  border: 15px solid #444;
+}
+
+.form_control_buttons {
+  margin-top: 3em;
+}
+
+.form_control_buttons button {
+  background-color: #1F6870;
+  color: #fff;
+  width: 7em;
+}
+
+.form_control_buttons button:hover {
+  border: 1px solid #1F6870;
+  background-color: #fff;
+}
+
+.form_control_buttons .next {
+  float: right;
+}
+
+.cancel {
+  float: right;
+}
+
+.save {
+  background-color: #61EFFF;
+  margin-right: 0.5em;
+}
+
+.error {
+  color: #F08C43;
+}
+
+.form {
+  border: 1px solid  #61EFFF;
+  padding: 2em;
+  border-radius: 5px;
+  margin: 2em 0;
+}
+
+.education_container {
+  background: #61EFFF;
+  margin: 1em 0;
+  padding: 1em;
+  border-radius: 10px;
+}
+
+.section_heading {
+  background-color: #1F6870;
+  color: #fff;
+  text-align: center;
+  padding: 0.5em;
+  border-radius: 5px;
+}
+
+.navigation {
+  color: "#1F6870";
+}
+
+.navigation .nav {
+  border: 2px solid #000;
+}
+
+.navigation .item {
+  color: #61EFFF;
+  font-weight: bolder;
+  font-size: 1.2em;
+}
+
+.footer {
+  border-top: 1px solid #000;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.footer img {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-item-align: center;
+      align-self: center;
+}
+
+.footer p {
+  text-align: center;
+}
+
+.header {
+  height: 80vh;
+  background: #1F6870;
+}
+
+.header .header_container {
+  margin: 0 1em;
+}
+
+.header .text {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding-top: 10em;
+  color: #fff;
+}
+
+.header .text h4 {
+  font-size: 3em;
+  padding-bottom: 0.6em;
+}
+
+.header .text h6 {
+  font-size: 1em;
+}
+
+.header .text button {
+  color: #61EFFF;
+  border: 1px solid #000;
+  margin-top: 0.5em;
+}
+
+.header .text button:hover {
+  background-color: #61EFFF;
+  color: #000;
+}
+
+.header img {
+  margin-top: 5em;
+}
+/*# sourceMappingURL=style.css.map */

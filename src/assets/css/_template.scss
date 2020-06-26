@@ -1,0 +1,297 @@
+.templates_section{
+    // background-color: #3e3e3e;
+     h5{
+         margin-top: 2em;
+         font-size: 3em;
+         text-align: center;
+         padding: 0.5em 0;
+     }
+
+    .templates-container{
+        display: grid;
+        grid-template-columns: auto  auto;
+        font-size: 1rem;
+        width: 70%;
+        margin: 2em 3em;
+
+        .template_container{
+            border: 1px solid grey;
+            border-radius: 3px;
+            margin: 3em 1em;
+            width: 40vw;
+            padding: 0;
+            img{
+                width: 100%;
+            }
+           
+            
+        }
+    }
+    
+
+}
+
+
+.template_container{
+    background-color: #fff;
+    font-size: 0.6em;
+   
+
+.template1{
+    //padding: 2em 1em;
+    
+
+
+    .sidebar{
+        background-color: rgb(22, 22, 54);
+        color: #fff;
+        padding: 2em 0.5em;
+
+        .section_heading{
+            font-size: 3em;
+            color: red;
+            border: 1px solid red;
+         }
+ 
+        .name_section{
+            margin-bottom: 2em;
+            h3{
+                font-size: 0.5em;
+                font-weight: bolder;
+                padding: 0.3em;
+            }
+    
+            img{
+                width:  9em;
+            }
+        }
+
+        .contact_section{
+            margin-bottom: 2em;
+            .section_heading{
+                font-size: 0.3em;
+                background-color: red;
+             }
+             .contact{
+                 display: flex;
+                 font-size: 0.1em;
+                 
+             }
+
+        }
+
+        .skills_section{
+            margin-bottom: 2em;
+
+            .skill{
+                label{
+                    font-size: 0.5em;
+                }
+            }
+
+        }
+        .achievements_sections{
+            margin-bottom: 2em;
+            .achievements{
+                list-style: none;
+            }
+
+        }
+        .language_section{
+            margin-bottom: 2em;
+
+        }
+      
+    }
+
+    .main{
+      .section-heading{
+          font-weight: bolder;
+          font-size: 1.2em;
+          text-transform: uppercase;
+      }
+        .objective_section{
+            margin: 1em 0.5em;
+            border-bottom: solid 1px #444;
+            margin-bottom: 0.5em;
+        }
+        .education_section{
+            border-bottom: solid 1px #444; 
+            margin-bottom: 0.5em;
+
+            .education{
+                margin-bottom: 0.5em;
+                .title{
+                    font-weight: bolder;
+                }
+                .content{
+                    display: grid;
+                    grid-template-columns: 2fr 1fr;
+                }
+            }
+        }
+        .experience_section{
+            border-bottom: solid 1px #444;
+            margin-bottom: 0.5em;
+
+            .experience{
+
+                .section-subheading{
+                    font-weight: bolder;
+                    display: grid;
+                    grid-template-columns: 2fr 1fr;
+
+                }
+
+            }
+
+        }
+        .reference_section{
+            border-bottom: solid 1px #444;
+            margin-bottom: 0.5em;
+        }
+        .certification_sections{
+           
+        }
+    }
+    
+}
+
+.template2{
+
+    .section-heading{
+        font-weight: bolder;
+        font-size: 1.2em;
+        text-transform: uppercase;
+        color: maroon;
+    }
+
+   .main{
+
+    .personal_section{
+        background-color: maroon;
+        color: #fff;
+        width: 100%;
+        padding: 0.2em;
+        margin-bottom: 0.5em;
+    }
+
+    .objective_section{
+      
+    }
+    .education_section{
+       
+
+    }
+    .experience_section{
+        
+
+    }
+    .certifications_sections{
+       
+      
+   }
+
+    } 
+
+    .sidebar{
+        background-color: rgb(202, 60, 60);
+        height: 100%;
+        margin: 0;
+       
+        .profile_section{
+            margin-top: 3em;
+            img{
+                width: 9em;
+            }
+        } 
+    }
+    
+
+   }
+
+   .template3{
+       .heading_section{
+           color: #fff;
+           .personal_info{
+             background-color: rgb(9, 77, 74);
+             padding: 0.5em;
+             width: 100%;
+             .profile{
+                display: flex;
+                img{
+                    border-radius: 50%;
+                    width: 8em;
+                }
+                h6{
+                    display: flex;
+                    align-items: center;
+                    font-size: 0.3em;
+                    margin-left: 0.5em;
+                }
+            }
+           }
+           
+
+           .social_section{
+               background-color: mediumturquoise;
+               display: grid;
+               grid-template-columns: 1fr 1fr 1fr;
+               padding: 0.5em 0;
+           }
+
+       }
+
+       .main{
+           padding: 1em;
+
+        .section-heading{
+            background-color: mediumturquoise;
+            color: #fff;
+            border-radius: 10px;
+            text-align: center;
+            padding: 0.3em 0;
+            font-weight: bolder;
+            margin-bottom: 0.3em;
+        }
+        ul{
+            list-style: none;
+        }
+
+        .reference_section{
+            .reference{
+                .name{
+                    font-weight: bolder;
+                }
+            }
+        }
+        .achievements_section{
+            ul{
+                list-style-type: circle;
+            }
+        }
+        .experience_section{
+            .experience{
+                .date{
+                    color: #3e3e3e;
+                    font-style: italic;
+                }
+
+                .company{
+                    font-weight: bolder;
+                    font-size: 1em;
+                }
+                .title{
+                    font-weight: bold;
+                }
+            }
+        }
+
+       }
+
+   }
+
+   
+
+}
+
