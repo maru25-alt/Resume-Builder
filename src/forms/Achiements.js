@@ -32,7 +32,9 @@ export class Achiements extends Component {
     handleSubmit = (e) => {
         e.preventDefault();
         if (this.validator.allValid()) {
-           this.props.fetchAchievements(this.state)
+           this.props.fetchAchievements({
+               year: this.state.year,
+              title: this.state.title})
             alert('You submitted the form and stuff!');
             this.setState({
                 year: "",
@@ -51,6 +53,7 @@ export class Achiements extends Component {
         if(achievements.length >0){
             disabled= false
         }
+        console.log(this.props)
         return (
             <div>
                  <div className="section_heading">
@@ -90,8 +93,8 @@ export class Achiements extends Component {
                 </form>
 
                  <div className="form_control_buttons">
-                        <Link className="prev" to="/createResume/07"><button className="btn "> <i class="far fa-arrow-alt-circle-left"></i>Prev</button> </Link>
-                        <Link className="next" to="/createResume/09"><button className="btn"  disabled={disabled}> Next <i class="far fa-arrow-circle-right"></i></button></Link>
+                        <Link className="prev" to="/createResume/07"><button className="btn "> <i className="far fa-arrow-alt-circle-left"></i>Prev</button> </Link>
+                        <Link className="next" to="/createResume/09"><button className="btn"  disabled={disabled}> Next <i className="far fa-arrow-circle-right"></i></button></Link>
                 </div>
                 
             </div>
@@ -104,7 +107,8 @@ Achiements.propTypes = {
  }
  
  const mapStateToProps = (state) => ({
-     achievements: state.currentResume.achievements
+     achievements: state.currentResume.awards,
+     certifications: state.currentResume
  })
  
  export default connect(mapStateToProps, {fetchAchievements})(Achiements)

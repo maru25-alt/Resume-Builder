@@ -13,11 +13,10 @@ import Achievements from '../forms/Achiements'
 
 export class Forms extends Component {
     handlePreview = () => {
-        console.log('clicked')
         this.props.history.push('/resume')
     }
     render() {
-        console.log(this.props)
+       
         let form = () => {
             switch (this.props.match.params.id) {
                 case "01":

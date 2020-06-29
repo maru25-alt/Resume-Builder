@@ -22,12 +22,21 @@ export class Form extends Component {
         facebook: "",
         twitter: "",
         linkedin: "",
-        disabled: true
+    }
+ getBase64Image = (file) =>{
+    return new Promise((resolve,reject) => {
+        const reader = new FileReader();
+        reader.onload = () => resolve(reader.result);
+        reader.onerror = error => reject(error);
+        reader.readAsDataURL(file);
+     });
     }
     handleChangeImage = (e) => {
-         this.setState({
-           profile: URL.createObjectURL(e.target.files[0]),
-         })
+       this.getBase64Image((e.target.files[0]))
+        .then(result => this.setState({
+            profile:  result
+          }))
+         
     }
     handleChange = (e) => {
         this.setState({
@@ -42,7 +51,6 @@ export class Form extends Component {
             this.setState({
                 disabled: false
             })
-
             let data = {
                 profile: this.state.profile,
                 name: this.state.name,
@@ -53,7 +61,6 @@ export class Form extends Component {
                 twitter: this.state.twitter,
                 linkedin: this.state.linkedin,  
             }
-
              this.props.fetchPersonal(data)
             
           } else {
@@ -61,8 +68,28 @@ export class Form extends Component {
             this.forceUpdate();
           }
     }
+    componentWillMount(){
+        if(typeof localStorage.personal !== 'undefined') {
+            let data = (JSON.parse(localStorage.getItem('personal')))
+            this.setState({
+                profile: data.profile,
+                name: data.name,
+                email: data.email,
+                phone: data.phone,
+                address: data.address,
+                facebook: data.facebook,
+                twitter: data.twitter,
+                linkedin: data.linkedin,
+            })    
+          }
+        
+    }
     render() {
-        console.log(this.props)
+       let disabled =  true;
+       if(typeof localStorage.personal !== 'undefined') {
+           disabled = false
+       }
+
         let {profile, name, email, phone, address, facebook,twitter,linkedin} = this.state
         return (
             <div>
@@ -140,7 +167,7 @@ export class Form extends Component {
                </form>
                     <div className="form_control_buttons">
                         <Link className="prev" to="/"><button className="btn "> <i className="far fa-arrow-alt-circle-left"></i>Prev</button> </Link>
-                        <Link className="next" to="/createResume/02"><button className="btn" disabled={this.state.disabled}> Next <i className="far fa-arrow-circle-right"></i></button></Link>
+                        <Link className="next" to="/createResume/02"><button className="btn" disabled={disabled}> Next <i className="far fa-arrow-circle-right"></i></button></Link>
                     </div>
             </div>
         )

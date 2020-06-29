@@ -11,8 +11,14 @@ import templete3 from '../assets/images/template3.png';
 
 class index extends Component {
 
-    handleSelect = (e) => {
-        setSelectedTemplate(e.target.id)
+    handleSelect = () => {
+        this.props.setSelectedTemplate("1")
+    }
+    handleSelect2 = ()=> {
+        this.props.setSelectedTemplate("2")
+    }
+    handleSelect3 = () => {
+        this.props.setSelectedTemplate("3")
     }
     render() {
        
@@ -20,29 +26,32 @@ class index extends Component {
         <div className="templates_section">
             <h5>Select Your Templete</h5>
             <div className="templates-container">
-                <div className="template_container">
-                   <Link to="/createResume/01"> 
-                   <img onClick={this.handleSelect} id="1" src={templete1} alt="resume"></img>
-                   <div class="middle">
-                     <p class="text">Use this template </p>
-                   </div>
-                   </Link>
-                </div>
-                <div className="template_container">
+                <div className="template_container"  >
+                   <img src={templete1} alt="resume"></img>
+                   <div className="middle"  onClick={this.handleSelect} id="1">
                    <Link to="/createResume/01">
-                        <img onClick={this.handleSelect} src={templete2} id="2"  alt="resume"></img>
-                        <div class="middle">
-                          <p class="text">Use this template </p>
-                        </div>
-                 </Link>
+                      <p className="text">Use this template </p>
+                     </Link>
+                   </div>
+                 
                 </div>
                 <div className="template_container">
-                    <Link to="/createResume/01">
-                        <img onClick={this.handleSelect} src={templete3} id="3"  alt="resume"></img>
-                        <div class="middle">
-                           <p class="text">Use this template </p>
+                        <img  src={templete2}   alt="resume"></img>
+                        <div className="middle" onClick={this.handleSelect2} id="2" value='2'>
+                          <Link to="/createResume/01">
+                            <p className="text">Use this template </p>
+                          </Link>
+                        </div>
+               
+                </div>
+                <div className="template_container">
+                        <img  src={templete3}  alt="resume"></img>
+                        <div className="middle" onClick={this.handleSelect3} id="3"  >
+                        <Link to="/createResume/01">
+                           <p className="text">Use this template </p>
+                        </Link> 
                         </div>   
-                    </Link>
+                    
                 </div>
                 
                
@@ -62,7 +71,7 @@ const mapStateToProps = (state) => ({
 });
 
 const mapActionsToProps = {
-    setSelectedTemplate
+    setSelectedTemplate : setSelectedTemplate
 }
 
 export default connect(mapStateToProps, mapActionsToProps)(index)

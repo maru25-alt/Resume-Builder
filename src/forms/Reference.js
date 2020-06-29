@@ -56,7 +56,7 @@ export class Form extends Component {
  
                 <div className="form_control_buttons">
                         <Link className="prev" to="/createResume/08"><button className="btn "> <i className="far fa-arrow-alt-circle-left"></i>Prev</button> </Link>
-                        <Link className="next" to="/createResume/09"><button disabled={disabled} className="btn"> Next <i className="far fa-arrow-circle-right"></i></button></Link>
+                        <Link className="next" to="/resume"><button disabled={disabled} className="btn"> Next <i className="far fa-arrow-circle-right"></i></button></Link>
                 </div>
             </div>
         )

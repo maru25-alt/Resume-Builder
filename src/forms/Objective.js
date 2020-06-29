@@ -25,13 +25,15 @@ export class Form extends Component {
         if (this.validator.allValid()) {
             this.props.fetchObjective(this.state.objective)
             alert('You successfully submitted objectives!');
-            this.setState({
-                objective: ""
-            })
           } else {
             this.validator.showMessages();
             this.forceUpdate();
           }
+    }
+    componentWillMount(){
+        this.setState({
+            objective: this.props.objective
+        })
     }
     render() {
         let disabled = true;

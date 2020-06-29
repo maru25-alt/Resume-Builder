@@ -1,5 +1,5 @@
 import {
-    SELECTED_TEMPELATE,
+    GET_AWARDS_DATA,
     GET_ACHIEVEMENT_DATA,
     GET_EDUCATION_DATA,
     GET_CERTIFICATION_DATA,
@@ -16,24 +16,24 @@ import {
     DELETE_LANGUAGE_DATA,
    DELETE_REFERENCE_DATA,
    DELETE_SKILLS_DATA,
+   GET_LOCALHOST_DATA
 } from '../actions/types'
 
 const intialState = {
     personal: {},
     skills: [],
-    achievements: [],
     objective: "",
     education: [],
     experience: [],
     reference: [],
     certifications: [],
-    languages: []  
+    languages: [], 
+    awards: [],  
 }
 
 export default function (state = intialState, action){
-    
     switch(action.type){
-
+      
         case GET_PERSONAL_DATA :
             return {
                 ...state, 
@@ -59,11 +59,6 @@ export default function (state = intialState, action){
                ...state,
                objective: action.payload
            } 
-        case GET_ACHIEVEMENT_DATA:
-            return{
-                ...state,
-                achievements:[...state.achievements, action.payload]
-            }
         case GET_CERTIFICATION_DATA:
             return{
                 ...state,
@@ -78,7 +73,12 @@ export default function (state = intialState, action){
            return{
                 ...state,
                 reference:[...state.reference, action.payload]
-           }  
+           } 
+           case GET_AWARDS_DATA:
+               return{
+                   ...state,
+                   awards: [...state.awards, action.payload]
+               } 
            case DELETE_EDUCATION_DATA: 
            return{
                ...state,
@@ -113,7 +113,23 @@ export default function (state = intialState, action){
             return{
                 ...state,
                 skills: state.skills.filter(e => e.id !== action.payload)
-            }                   
+            } 
+            case GET_LOCALHOST_DATA:
+                return{
+                    ...state,
+                    personal: action.personal,
+                    skills: action.skills,
+                    achievements: action.activements,
+                    objective: action.objective,
+                    education: action.education,
+                    experience: action.experience,
+                    reference: action.reference,
+                    certifications: action.certifications,
+                    languages: action.languages ,
+                    awards: action.awards
+                }
+              
         default: return state;
     }
+   
 }

@@ -14,7 +14,8 @@ export class Form extends Component {
     render() {
         let {education} = this.props
         let disabled  = true
-        if(education.length > 0){
+        console.log(this.props)
+        if(education.length !== 0){
             disabled = false
         }
         return (
@@ -57,7 +58,7 @@ export class Form extends Component {
     }
 }
 Form.propTypes = {
-    education: PropTypes.array.isRequired
+    education: PropTypes.array
 }
 
 const mapStateToActions = (state) => ({

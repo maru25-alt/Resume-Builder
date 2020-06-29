@@ -46,28 +46,28 @@ export class referenceForm extends Component {
             <div>
                 <form className="form" onSubmit={this.handleSubmit}>
                    <div className="form-group row">
-                        <label for="name" className="col-sm-2 col-form-label">Name</label>
+                        <label htmlFor="name" className="col-sm-2 col-form-label">Name</label>
                         <div className="col-sm-10">
                         <input type="text" value={this.state.name} onChange={this.handleChange} className="form-control" id="name"/>
                         {this.validator.message('name',this.state.name, 'required|string')}
                         </div>
                     </div>
                     <div className="form-group row">
-                        <label for="email" className="col-sm-2 col-form-label">Email</label>
+                        <label htmlFor="email" className="col-sm-2 col-form-label">Email</label>
                         <div className="col-sm-10">
                         <input type="email" value={this.state.email} className="form-control" id="email" onChange={this.handleChange}/>
                         {this.validator.message('email',this.state.email, 'required|email')}
                         </div>
                     </div>
                     <div className="form-group row">
-                        <label for="telephone" className="col-sm-2 col-form-label">Telephone</label>
+                        <label htmlFor="telephone" className="col-sm-2 col-form-label">Telephone</label>
                         <div className="col-sm-10">
                         <input type='number' value={this.state.phone} className="form-control" id="phone" onChange={this.handleChange}/>
                         {this.validator.message('telephone',this.state.phone, 'required')}
                         </div>
                     </div>    
                     <div className="form-group">
-                      <label for="address">Address</label>
+                      <label htmlFor="address">Address</label>
                       <textarea className="form-control" placeholder="type here..." value={this.state.address} id="address" rows="3" onChange={this.handleChange}></textarea>
                       {this.validator.message('address',this.state.address, 'required|string')}
                     </div>

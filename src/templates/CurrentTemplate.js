@@ -8,6 +8,7 @@ import {connect} from 'react-redux'
 export class Template extends Component {
     
     render() {
+        console.log(this.props)
         let resume = () => {
             
             switch (this.props.selectedTemplete) {
@@ -35,16 +36,15 @@ export class Template extends Component {
 
 
 Template.propTypes = {
+    match: PropTypes.object.isRequired,
     resume: PropTypes.object.isRequired,
     selectedTemplete : PropTypes.string.isRequired,  
 }
 
 const mapStateToProps = (state) => ({
-    resume: state.templetesReducer,
+    resume: state.currentResume,
     selectedTemplete: state.aboutTemplate.selectedResume ,
   
 })
-
-
 
 export default  connect(mapStateToProps)((Template))
