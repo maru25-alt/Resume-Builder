@@ -6,7 +6,7 @@ export class footer extends Component {
     render() {
         return (
             <div className="footer">
-                <img src={logo} width="80"></img>
+                <img src={logo} alt="logo" width="80"></img>
                 <p> Copyrights &copy; 2020 All rights reserved </p>
                
             </div>

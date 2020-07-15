@@ -44,7 +44,7 @@ export class Form extends Component {
             <div>
 
                  <div className="section_heading">
-                    <span>❇️❇️❇️ Step 4 ❇️❇️❇️</span>
+                    <span  role="img" aria-label="emoji">❇️❇️❇️ Step 4 ❇️❇️❇️</span>
                     <h3>Fill up your Objective:</h3>
                 </div>
                 <form className="form" onSubmit={this.handleSubmit}>

@@ -54,7 +54,7 @@ export class Form extends Component {
         return (
             <div>
                  <div className="section_heading">
-                    <span>❇️❇️❇️ Step 5 ❇️❇️❇️</span>
+                    <span  role="img" aria-label="emoji">❇️❇️❇️ Step 5 ❇️❇️❇️</span>
                     <h3>Fill up your Certifications:</h3>
                 </div>
                 {certifications && certifications.map(e => {

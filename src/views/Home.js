@@ -1,6 +1,6 @@
 import React, { Component } from 'react'
 import Templetes from '../templates/index'
-import Image from '../assets/images/cover_pic.jpg'
+
 export class Home extends Component {
     render() {
         return (

@@ -57,7 +57,7 @@ export class Achiements extends Component {
         return (
             <div>
                  <div className="section_heading">
-                    <span>❇️❇️❇️ Step 7 ❇️❇️❇️</span>
+                    <span  role="img" aria-label="emoji">❇️❇️❇️ Step 7 ❇️❇️❇️</span>
                     <h3>Fill up your Achiements and Awards:</h3>
                 </div>
 

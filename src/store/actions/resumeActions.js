@@ -1,6 +1,5 @@
 import {
     SELECTED_TEMPELATE,
-    GET_ACHIEVEMENT_DATA,
     GET_EDUCATION_DATA,
     GET_CERTIFICATION_DATA,
     GET_EXPERIENCE_DATA,
@@ -142,10 +141,7 @@ export const fetchObjective= (e) => dispatch => {
 export  const fetchAchievements = (e) => dispatch => {
     var id = ids.next();
     var data = {...e, id};
-    // dispatch({
-    //     type: GET_ACHIEVEMENT_DATA,
-    //     payload: data
-    // })
+   
     dispatch({
         type: GET_AWARDS_DATA,
         payload: data

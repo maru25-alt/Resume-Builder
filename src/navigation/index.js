@@ -5,8 +5,8 @@ export class index extends Component {
         return (
             <div className="navigation">
                 <nav className="navbar navbar-expand-lg nav">
-                <a className="navbar-brand" href="#">
-                <img src={logo} width='100'></img></a>
+                <a className="navbar-brand" href="/">
+                <img alt="logo" src={logo} width='100'></img></a>
                 <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
                     <span className="navbar-toggler-icon"></span>
                 </button>

@@ -15,7 +15,7 @@ export class Form extends Component {
         return (
             <div>
                  <div className="section_heading">
-                    <span>❇️❇️❇️ Step 2 ❇️❇️❇️</span>
+                    <span role="img" aria-label="emoji">❇️❇️❇️  Step 2 ❇️❇️❇️</span>
                     <h3>Fill up your Experimence:</h3>
                 </div>
                 <div>

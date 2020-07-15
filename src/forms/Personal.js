@@ -94,7 +94,7 @@ export class Form extends Component {
         return (
             <div>
                 <div className="section_heading">
-                    <span>❇️❇️❇️ Step 1 ❇️❇️❇️</span>
+                    <span  role="img" aria-label="emoji">❇️❇️❇️ Step 1 ❇️❇️❇️</span>
                     <h3>Fill up the Following Details for your Resume:</h3>
                 </div>
                 <form >
@@ -114,7 +114,7 @@ export class Form extends Component {
                         <label>Profile</label>
                         <input onChange={this.handleChangeImage} className="form-control" type="file" accept="image/x-png,image/gif,image/jpeg" />
                         <div>
-                            <img width="200" src={profile}></img>
+                            <img alt="profile" width="200" src={profile}></img>
                         </div>
                         {this.validator.message('profile', profile, 'required')}
                     </div>

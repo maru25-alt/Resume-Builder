@@ -1,5 +1,4 @@
 import React, { Component } from 'react'
-import profile from '../assets/images/profile.jpg'
 import PropTypes from 'prop-types';
 
 export class templete2 extends Component {
